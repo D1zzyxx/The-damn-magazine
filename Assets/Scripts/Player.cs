@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public static Player Instance;
+
     [SerializeField] private float movingSpeed = 5f;
     private PlayerInputActions playerInputActions; //Переменная, которая подключает скрипт движения персонажа
 
