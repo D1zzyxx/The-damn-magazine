@@ -12,11 +12,10 @@ public class PickUpItem : MonoBehaviour
         itemObj = gameObject;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other) //метод который при столкновении игрока и предмета, вызывает метод PutEmptySlot и выключает предмет на сцене
     {
         if (other.CompareTag("Player"))
-        {
-            Debug.Log("Положилось");
+        {           
             Inventory.instance.PutEmptySlot(item, itemObj);
             gameObject.SetActive(false);
         }

@@ -9,5 +9,9 @@ public class Item : ScriptableObject
     [Header("Базовые характиристики")]
     public string Name = " ";
     public string Discriptin = "";
+    public string DiscriptinLore = "";
     public Sprite icon = null;
+
+    public bool isHealing;
+    public float HealingPower;
 }

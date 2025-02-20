@@ -13,6 +13,11 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this; //инициализируем статическое поле
+        }
+
         rb = GetComponent<Rigidbody2D>(); //Инициализирую компонент Rigidbody2D, которая позволяет персонажу иметь физические свойства
         playerInputActions = new PlayerInputActions(); //Инициализирую Input System, она позволяет персонажу передвигаться  
         playerInputActions.Enable(); //Подключение системы ввода(Input System)
