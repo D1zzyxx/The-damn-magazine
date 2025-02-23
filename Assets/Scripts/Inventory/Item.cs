@@ -13,5 +13,5 @@ public class Item : ScriptableObject
     public Sprite icon = null;
 
     public bool isHealing;
-    public float HealingPower;
+    public float healingPower;
 }
