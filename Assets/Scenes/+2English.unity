@@ -621,7 +621,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4412903978067763945, guid: 86893c94789ef1848863a4e3ea9f5ab7, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 77.849
+      value: -0.92049
       objectReference: {fileID: 0}
     - target: {fileID: 4412903978067763945, guid: 86893c94789ef1848863a4e3ea9f5ab7, type: 3}
       propertyPath: m_SizeDelta.y
@@ -629,19 +629,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4412903978067763945, guid: 86893c94789ef1848863a4e3ea9f5ab7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 39.845
+      value: 0.46027374
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242246192297225664, guid: 86893c94789ef1848863a4e3ea9f5ab7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.95600003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242246192297225664, guid: 86893c94789ef1848863a4e3ea9f5ab7, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.41032502
       objectReference: {fileID: 0}
     - target: {fileID: 5242246192297225664, guid: 86893c94789ef1848863a4e3ea9f5ab7, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -0.7215
+      value: 0.67649984
       objectReference: {fileID: 0}
     - target: {fileID: 5242246192297225664, guid: 86893c94789ef1848863a4e3ea9f5ab7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 2.083
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5242246192297225664, guid: 86893c94789ef1848863a4e3ea9f5ab7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1.4308014
+      value: -0.99890137
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242246192297225664, guid: 86893c94789ef1848863a4e3ea9f5ab7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.23291016
       objectReference: {fileID: 0}
     - target: {fileID: 6335560142024646426, guid: 86893c94789ef1848863a4e3ea9f5ab7, type: 3}
       propertyPath: m_Name
@@ -1020,7 +1032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
