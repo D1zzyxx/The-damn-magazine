@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3b32d96d091a68b4489652690a2c5849
+guid: 2e25f9150a7961b46bf96a7a32c4230e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2184277102450767653
-    second: Bun_0
+      213: 5299416812676244720
+    second: zinawalkingfrontleft_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bun_0
+      name: zinawalkingfrontleft_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 13
-        width: 47
-        height: 37
+        x: 116
+        y: 0
+        width: 268
+        height: 438
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 527f89ea37c105e10800000000000000
-      internalID: 2184277102450767653
+      spriteID: 0f4ec4c738f4b8940800000000000000
+      internalID: 5299416812676244720
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Bun_0: 2184277102450767653
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

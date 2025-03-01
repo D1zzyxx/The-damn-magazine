@@ -2,20 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CameraControll : MonoBehaviour
 {
     private Transform player; // получаем оюъект перса
     public float smoothSpeed = 0.12f; // сглаживание передвижение камеры
 
+   
     public float minX, minY, maxX, maxY; // ограничители камеры, чтобы не улетала куда не надо
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform; // получаем позицию игрока по тегу
-    }
+    }    
 
     private void LateUpdate() // LateUpdate для корректного обновления
-    {
+    {       
         Vector3 moveCamera = transform.position; // получаем позицию камеры, для дальнейшего изменения
 
         moveCamera.x = player.position.x; 

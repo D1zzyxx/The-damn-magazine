@@ -22,6 +22,7 @@ public class InventorySlots : MonoBehaviour
     public void PutInSlot(Item item, GameObject obj)
     {
         //калдем предметы в слот, заполняя компоненты слота компонентами предмета
+        icon.color = Color.white;
         icon.sprite = item.icon;
         slotItem = item;
         icon.enabled = true;
