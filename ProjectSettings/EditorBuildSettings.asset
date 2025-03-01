@@ -8,4 +8,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/2Corridor.unity
+    guid: a103cfd4ecbd1de49a74929c56db517f
+  - enabled: 1
+    path: Assets/Scenes/LosingScene.unity
+    guid: 9949d53bb48d97c46a16da4e20a8d1fc
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
