@@ -14,6 +14,7 @@ public class QuizManager : MonoBehaviour
      * Завершает викторину после всех вопросов
      */
 
+    #region Переменные (Поля)
     private int currentQuestIndex; // Индекс текущего вопроса
     private int correctAnswersCount; // Счетчик правильных ответов
 
@@ -23,16 +24,21 @@ public class QuizManager : MonoBehaviour
     public Button btnReply2; // Кнопка второго ответа
     public Button btnReply3; // Кнопка третьего ответа
 
+    public TextMeshProUGUI btnAnswerText1; // Текст кнопки первого ответа
+    public TextMeshProUGUI btnAnswerText2; // Текст кнопки второго ответа
+    public TextMeshProUGUI btnAnswerText3; // Текст кнопки третьего ответа
+
     public GameObject itemPrefab; // Prefab предмета (назназначить нужно в инспекторе)
+    #endregion
 
     #region Массив вопросов
     private class Question
     {
         
         
-        public string questionText; // Текст вопроса
-        public string[] options; // Массив вариантов ответов
-        public int correctAnswerIndex; // Индекс правильного ответа (-1, если правильного ответа нет)
+        public string questionText; //Текст вопроса
+        public string[] options; //Массив вариантов ответов
+        public int correctAnswerIndex; //Индекс правильного ответа (-1, если правильного ответа нет)
 
         public Question(string text, string[] opts, int correctIndex)
         {
@@ -53,7 +59,9 @@ public class QuizManager : MonoBehaviour
         new Question("Что, по мнению Воланда, испортило москвичей?",
             new string[] {"Деньги", "Власть", "Квартиный вопрос"}, 2),
         new Question("Как трансформируется образ Иешуа в романе по сравнению с традиционным библейским образом Иисуса?",
-            new string[] {"Он более агрессивный и воинственный", "", ""}, -1), // Нет правильного ответа
+            new string[] {"Он более агрессивный и воинственный", 
+                          "Он более агрессивный и воинственный", 
+                          "Он более агрессивный и воинственный"}, -1), // Нет правильного ответа
         new Question("Кто является автором романа Война и мир",
             new string[] { "Лев Толстой", "Федор Достоевский", "Иван Тургенев" }, 0),
         new Question("Назовите главных героев романа Война и мир",
@@ -105,17 +113,17 @@ public class QuizManager : MonoBehaviour
 
         // Заполняем текст кнопок
         if (currentQuestion.options.Length > 0)
-            btnReply1.GetComponent<TMP_Text>().text = currentQuestion.options[0];
+            btnAnswerText1.GetComponent<TMP_Text>().text = currentQuestion.options[0];
         else
             btnReply1.interactable = false;
 
         if (currentQuestion.options.Length > 1)
-            btnReply2.GetComponent<TMP_Text>().text = currentQuestion.options[1];
+            btnAnswerText2.GetComponent<TMP_Text>().text = currentQuestion.options[1];
         else
             btnReply2.interactable = false;
 
         if (currentQuestion.options.Length > 2)
-            btnReply3.GetComponent<TMP_Text>().text = currentQuestion.options[2];
+            btnAnswerText3.GetComponent<TMP_Text>().text = currentQuestion.options[2];
         else
             btnReply3.interactable = false;
     }
@@ -195,11 +203,11 @@ public class QuizManager : MonoBehaviour
         if (itemPrefab != null)
         {
             Instantiate(itemPrefab, dropPosition, Quaternion.identity);
-            Debug.Log("Предмет выпал!");
+            Debug.Log("Предмет выпал! Победа");
         }
         else
         {
-            Debug.Log("Prefab предмета не назначен!");
+            Debug.Log("Prefab назначь!");
         }
     }
 }

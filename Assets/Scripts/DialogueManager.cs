@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
      * Заканчивает диалог
      */
 
+    #region Поля
     public TextMeshProUGUI line; // Ссылка на TMPUGI для вывода строки
     public Button buttonNext; // Ссылка на кнопку "Далее"
     public GameObject panelDialog; // Ссылка на панель диалога
@@ -20,6 +21,7 @@ public class DialogueManager : MonoBehaviour
     private int indexLine; // Индекс текущей строки диалога
     private bool isOrder; // Флажок очередности (преподаватель/игрок)
     private bool isSecondDialogue = false; // Флаг для второго диалога
+    #endregion
 
     #region Реплики персонажей
     // Первый диалог
@@ -50,6 +52,7 @@ public class DialogueManager : MonoBehaviour
     };
     #endregion
 
+    #region Методы Start и OnTriggerEnter2D
     private void Start()
     {
         panelDialog.SetActive(false); // Отключаем диалоговую панель при старте
@@ -67,7 +70,9 @@ public class DialogueManager : MonoBehaviour
             StartFirstDialogue();
         }
     }
+    #endregion
 
+    #region Методы старта диалога
     // Метод для запуска первого диалога
     public void StartFirstDialogue()
     {
@@ -86,8 +91,11 @@ public class DialogueManager : MonoBehaviour
         isOrder = true; // Первым говорит преподаватель
         panelDialog.SetActive(true); // Включаем панель диалога
         ActivateDialogue(); // Показываем первую строку диалога
+        buttonNext.interactable = true; // Включаем кнопку
     }
+    #endregion
 
+    #region Логика очередности диалога
     // Метод для активации следующей строки диалога
     public void ActivateDialogue()
     {
@@ -95,7 +103,7 @@ public class DialogueManager : MonoBehaviour
         if (!isSecondDialogue)
         {
             // Первый диалог
-            if (indexLine / 2 >= dialogTeacherFirst.Length || indexLine / 2 >= dialogPlayerFirst.Length)
+            if (indexLine / 1 >= dialogTeacherFirst.Length || indexLine / 1 >= dialogPlayerFirst.Length)
             {
                 EndFirstDialogue(); // Завершаем первый диалог
                 return;
@@ -104,20 +112,20 @@ public class DialogueManager : MonoBehaviour
             // Определяем, чья очередь говорить
             if (isOrder == true)
             {
-                line.text = dialogTeacherFirst[indexLine / 2];
+                line.text = dialogTeacherFirst[indexLine / 1];
                 isOrder = false;
             }
-            else
+            else if (isOrder == false)            
             {
-                line.text = dialogPlayerFirst[indexLine / 2];
+                line.text = dialogPlayerFirst[indexLine / 1];
                 isOrder = true;
                 indexLine++;
             }
         }
-        else
+        else if (isSecondDialogue)
         {
             // Второй диалог
-            if (indexLine / 2 >= dialogTeacherSecond.Length || indexLine / 2 >= dialogPlayerSecond.Length)
+            if (indexLine / 1 >= dialogTeacherSecond.Length || indexLine / 1 >= dialogPlayerSecond.Length)
             {
                 EndSecondDialogue(); // Завершаем второй диалог
                 return;
@@ -126,26 +134,28 @@ public class DialogueManager : MonoBehaviour
             // Определяем, чья очередь говорить
             if (isOrder == true)
             {
-                line.text = dialogTeacherSecond[indexLine / 2];
+                line.text = dialogTeacherSecond[indexLine / 1];
                 isOrder = false;
             }
-            else
+            else if (isOrder == false)
             {
-                line.text = dialogPlayerSecond[indexLine / 2];
+                line.text = dialogPlayerSecond[indexLine / 1];
                 isOrder = true;
                 indexLine++;
             }
         }
     }
+    #endregion
 
+    #region Методы завершения диалога
     // Метод для завершения первого диалога
     private void EndFirstDialogue()
     {
-        panelDialog.SetActive(false); // Отключаем панель диалога
-        buttonNext.interactable = false; // Деактивируем кнопку "Далее"
+        panelDialog.SetActive(false); // Выключаем панель диалога
+        buttonNext.interactable = false; // Выключаем кнопку "Далее"
         Debug.Log("Первый диалог завершен. Можно начинать викторину.");
 
-        // Здесь можно вызвать метод для начала викторины из QuizManager
+        // Ищем QuizManager на сцене и запускаем викторину
         QuizManager quizManager = FindObjectOfType<QuizManager>();
         if (quizManager != null)
         {
@@ -158,6 +168,7 @@ public class DialogueManager : MonoBehaviour
     {
         panelDialog.SetActive(false); // Отключаем панель диалога
         buttonNext.interactable = false; // Деактивируем кнопку "Далее"
-        Debug.Log("Второй диалог завершен. Предмет может выпасть.");
+        Debug.Log("Второй диалог завершен. Предмет должен выпасть.");
     }
+    #endregion
 }
