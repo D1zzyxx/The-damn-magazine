@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemUse : MonoBehaviour
 {
-    public static ItemUse Instance;
+    public static ItemUse Instance;    
     void Start()
     {
         Instance = this;
@@ -15,6 +15,8 @@ public class ItemUse : MonoBehaviour
         if (item.isHealing)
         {
             //Playre.Instanse.health =+ healingPower;
+            ItemInfo.Instance.CurrentSlot.ClearSlot();
+            ItemInfo.Instance.OffInfo();
             Debug.Log("+" + item.healingPower);
         }
     }
