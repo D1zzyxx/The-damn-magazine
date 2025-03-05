@@ -16,7 +16,7 @@ public class ItemInfo : MonoBehaviour
 
     private Item InfoItem;
     private GameObject ItemObj;
-    private InventorySlots CurrentSlot;
+    public InventorySlots CurrentSlot;
 
 
     private void Start()
@@ -41,7 +41,7 @@ public class ItemInfo : MonoBehaviour
     {       
         Vector2 DropPos = new(Player.Instance.transform.position.x + 3f, Player.Instance.transform.position.y); //получаем позицию игрока и чуть плюсуем чтобы не на месте игрока было
         ItemObj.SetActive(true); //врубаем предмет на сцене
-        ItemObj.transform.position = DropPos; //назначаем выкинутому предмету дропоз
+        ItemObj.transform.position = DropPos; //назначаем выкинутому предмету дропоз       
         CurrentSlot.ClearSlot(); //чистим слот
         OffInfo(); 
     }
