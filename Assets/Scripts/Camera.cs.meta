@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/PlayerInputActions.cs.meta
-guid: 828209867dbafa64987170386308e708
-========
-guid: c91a01652010fcd4a9f734a65e3e8edd
->>>>>>>> branchIlgizar:Assets/Scripts/DialogueManager.cs.meta
+guid: 720119eab04e5cb45a7b590dbb69a9bb
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
