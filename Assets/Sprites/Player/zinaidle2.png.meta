@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      zinaidle2_0: 244074783509227073
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

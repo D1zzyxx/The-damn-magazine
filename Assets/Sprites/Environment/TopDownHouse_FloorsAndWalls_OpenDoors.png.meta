@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2e25f9150a7961b46bf96a7a32c4230e
+guid: dd9ea8425cbaed8419f479f8a263529d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5299416812676244720
-    second: zinawalkingfrontleft_0
+      213: -1455739361726002933
+    second: TopDownHouse_FloorsAndWalls_OpenDoors_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zinawalkingfrontleft_0
+      name: TopDownHouse_FloorsAndWalls_OpenDoors_0
       rect:
         serializedVersion: 2
-        x: 116
+        x: 0
         y: 0
-        width: 268
-        height: 438
+        width: 128
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f4ec4c738f4b8940800000000000000
-      internalID: 5299416812676244720
+      spriteID: b0984ca63cc2ccbe0800000000000000
+      internalID: -1455739361726002933
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      zinawalkingfrontleft_0: 5299416812676244720
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
