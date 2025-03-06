@@ -49,6 +49,8 @@ public class ItemInfo : MonoBehaviour
     public void UseItem()
     {
         ItemUse.Instance.Use(InfoItem);
+        CurrentSlot.ClearSlot();
+        OffInfo();
     }
 
     public void ShowInfo(Item item, GameObject itemObj, InventorySlots currentSlot)

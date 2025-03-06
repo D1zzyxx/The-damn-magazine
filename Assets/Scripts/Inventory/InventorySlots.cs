@@ -42,5 +42,6 @@ public class InventorySlots : MonoBehaviour
         slotItem = null;
         ItemObj = null;
         icon.sprite = null;
+        icon.enabled = false;
     }
 }
