@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class Camera1 : MonoBehaviour
 {
     private Transform player; // получаем оюъект перса
     public float smoothSpeed = 0.12f; // сглаживание передвижение камеры

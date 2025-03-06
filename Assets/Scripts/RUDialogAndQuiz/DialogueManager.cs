@@ -14,6 +14,8 @@ public class DialogueManager : MonoBehaviour
      */
 
     #region Поля
+    public GameObject player; // Ссылка на игрока, далее у него будем ВКЛ/ВЫКЛ Ходьбу
+
     public TextMeshProUGUI line; // Ссылка на TMPUGI для вывода строки
     public Button buttonNext; // Ссылка на кнопку "Далее"
     public GameObject panelDialog; // Ссылка на панель диалога
@@ -21,6 +23,7 @@ public class DialogueManager : MonoBehaviour
     private int indexLine; // Индекс текущей строки диалога
     private bool isOrder; // Флажок очередности (преподаватель/игрок)
     private bool isSecondDialogue = false; // Флаг для второго диалога
+    private bool isDialogueLost; // Флаг о том проигрывался ли диалог
     #endregion
 
     #region Реплики персонажей
@@ -55,19 +58,24 @@ public class DialogueManager : MonoBehaviour
     #region Методы Start и OnTriggerEnter2D
     private void Start()
     {
+        isDialogueLost = false;
         panelDialog.SetActive(false); // Отключаем диалоговую панель при старте
         indexLine = 0; // Обнуляем индекс
         isOrder = true; // Первым говорит преподаватель
         isSecondDialogue = false; // Начинаем с первого диалога
+
     }
 
     // Запускается при соприкосновении с коллайдером
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && isDialogueLost == false)
         {
             // Запускаем первый диалог
             StartFirstDialogue();
+
+            // Переключаем флажок на true так как диалог начал воспроизводиться
+            isDialogueLost = true;
         }
     }
     #endregion
@@ -81,6 +89,10 @@ public class DialogueManager : MonoBehaviour
         isOrder = true; // Первым говорит преподаватель
         panelDialog.SetActive(true); // Включаем панель диалога
         ActivateDialogue(); // Показываем первую строку диалога
+
+        Player playerMove = player.GetComponent<Player>(); // Получаем скрипт для дальнейших манипуляций
+        playerMove.enabled = false; //Отключаем ходьбу
+
     }
 
     // Метод для запуска второго диалога
@@ -157,6 +169,7 @@ public class DialogueManager : MonoBehaviour
 
         // Ищем QuizManager на сцене и запускаем викторину
         QuizManager quizManager = FindObjectOfType<QuizManager>();
+
         if (quizManager != null)
         {
             quizManager.StartQuiz(); // Запускаем викторину
@@ -169,6 +182,9 @@ public class DialogueManager : MonoBehaviour
         panelDialog.SetActive(false); // Отключаем панель диалога
         buttonNext.interactable = false; // Деактивируем кнопку "Далее"
         Debug.Log("Второй диалог завершен. Предмет должен выпасть.");
+
+        Player playerMove = player.GetComponent<Player>(); // Получаем компонент для дальнейших манипуляций
+        playerMove.enabled = true; //Включаем ходьбу по окончанию диалога
     }
     #endregion
 }
