@@ -38,5 +38,6 @@ public class Player : MonoBehaviour
         rb.MovePosition(rb.position + inputVector * (movingSpeed * Time.fixedDeltaTime)); 
         //Метод, который принимает позицию персонажа, и двигает объект в зависимости от его
         //(текущего местоположения + направление движения * (заданную нами скорость * настраиваемый интервал смены частоты кадров))
+
     }
 }

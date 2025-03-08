@@ -8,9 +8,9 @@ using UnityEditor.Experimental.GraphView;
 
 public class UImanager : MonoBehaviour
 {
-    [SerializeField] private TMP_Text InputText, QuestionText;
-    [SerializeField] private TMP_InputField inputField;
-    [SerializeField] private string MyText;
+    [SerializeField] private TMP_Text InputText, QuestionText; //Переменные для: текста вопроса, вводимого текста
+    [SerializeField] private TMP_InputField inputField; //Переменная для сравнения вводимого текста и прав ответа
+    [SerializeField] private string MyText; //Что-то
 
     public Button continues;
     int count = 0;
@@ -20,12 +20,12 @@ public class UImanager : MonoBehaviour
     {
         
     }
-    public void SaveInputText()
+    public void SaveInputText() //Функция сравнения вводимого ответа
     {
         MyText = InputText.text;
         ShowText();
     }
-    void ShowText()
+    void ShowText() //функция происходящая при нажатии на кнопку продолжения ответа, но не доделанная
     {
     continues.onClick.AddListener
         (
@@ -41,7 +41,7 @@ public class UImanager : MonoBehaviour
             }
         );
     }
-    private void Question1()
+    private void Question1() //Сравнение 1 ответа
     {
         QuestionText.text = managers[0];
         
@@ -50,7 +50,7 @@ public class UImanager : MonoBehaviour
             count++;
         }
     }
-    private void Question2()
+    private void Question2()//Сравнение 2 ответа
     {
         QuestionText.text = managers[1];
         if (inputField.text == "CH3OH")
@@ -58,7 +58,7 @@ public class UImanager : MonoBehaviour
             count++;
         }
     }
-    private void Question3()
+    private void Question3()//Сравнение 3 ответа
     {
         QuestionText.text = managers[2];
         if (inputField.text == "СЕРА")
