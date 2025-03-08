@@ -3273,7 +3273,7 @@ MonoBehaviour:
   QuestionText: {fileID: 1152254225}
   inputField: {fileID: 1590646212}
   MyText: 
-  continues: {fileID: 0}
+  continues: {fileID: 2074940849}
 --- !u!1 &1398767084
 GameObject:
   m_ObjectHideFlags: 0
@@ -3476,7 +3476,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23023117, y: 0.22076587}
   m_AnchorMax: {x: 0.776, y: 0.7926391}
-  m_AnchoredPosition: {x: -2.630005, y: -3.0070114}
+  m_AnchoredPosition: {x: -2.630005, y: -3.0069962}
   m_SizeDelta: {x: 2.1968079, y: 3.1662903}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1441812096
