@@ -5,65 +5,83 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEditor.Experimental.GraphView;
+using Unity.VisualScripting;
 
 public class UImanager : MonoBehaviour
 {
     [SerializeField] private TMP_Text InputText, QuestionText; //Переменные для: текста вопроса, вводимого текста
     [SerializeField] private TMP_InputField inputField; //Переменная для сравнения вводимого текста и прав ответа
     [SerializeField] private string MyText; //Что-то
-
-    public Button continues;
-    int count = 0;
-    List<string> managers = new List<string>() { "Формула воды", "Формула спирта Металон", "Какой элемент называют \"желчью бога Вулкана\"?" };
-    //List<string> answer = new List<string>() { "H2O", "CH3OH", "СЕРА" };
+    public GameObject panels;
+    public Button continues; //Ко
+    string inputText;
+    int index = 0;
+    int comparies = 0;
+    List<string> managers = new List<string>() {"Формула воды", "Формула спирта Металон", "Какой элемент называют \"желчью бога Вулкана\"?" };
+    private void Awake()
+    {
+        QuestionText.text = managers[index];
+        
+    }
     private void Update()
     {
-        
+        continues.onClick.AddListener(SaveInputText);
     }
+    
     public void SaveInputText() //Функция сравнения вводимого ответа
     {
-        MyText = InputText.text;
-        ShowText();
-    }
-    void ShowText() //функция происходящая при нажатии на кнопку продолжения ответа, но не доделанная
-    {
-    continues.onClick.AddListener
-        (
-            delegate ()
-            {
-                for (int i = 0; i < 3; i++) 
-                {
+        if(index >= managers.Count)
+        {
+           
+        }
+        if (index == 0) Question1();
+        else if (index == 1) Question2();
+        else if (index == 2) Question3();
         
-                    if (i == 0) Question1();
-                    if (i == 1) Question2();
-                    if (i == 2) Question3();
-                }
-            }
-        );
-    }
+    }   
     private void Question1() //Сравнение 1 ответа
     {
-        QuestionText.text = managers[0];
-        
-        if (inputField.text == "H2O") 
-        { 
-            count++;
+        //inputText = inputField.text;
+        if (inputField.text != "")
+        {           
+            if (inputField.text == "H2O")
+            {
+                comparies += 1;
+            }
+            inputField.text = "";
+            ++index;
+            Debug.Log(comparies);
+            QuestionText.text = managers[index];
         }
     }
     private void Question2()//Сравнение 2 ответа
     {
-        QuestionText.text = managers[1];
-        if (inputField.text == "CH3OH")
-        {
-            count++;
+        
+        if (inputField.text != "")
+        {   
+            if (inputField.text == "CH3OH")
+            {
+                comparies += 1;
+            }
+            inputField.text = "";
+            ++index;
+            Debug.Log(comparies);
+            QuestionText.text = managers[index];
         }
+       
     }
     private void Question3()//Сравнение 3 ответа
     {
-        QuestionText.text = managers[2];
-        if (inputField.text == "СЕРА")
+        if (inputField.text != "")
         {
-            count++;
+            if (inputField.text == "CEPA")
+            {
+                comparies += 1;
+            }
+            inputField.text = "";
+            ++index;
+            Debug.Log(comparies);
         }
+        
     }
 }
