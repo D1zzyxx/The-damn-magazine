@@ -13,6 +13,7 @@ public class UImanager : MonoBehaviour
     [SerializeField] private TMP_InputField inputField; //Переменная для сравнения вводимого текста и прав ответа
     [SerializeField] private string MyText; //Что-то
     public GameObject panels;
+    public GameObject panelsDialogue;
     public Button continues; //Ко
     string inputText;
     int index = 0;
@@ -32,7 +33,9 @@ public class UImanager : MonoBehaviour
     {
         if(index >= managers.Count)
         {
-           
+            PlayerPrefs.SetInt("Comparies", comparies);
+            panels.SetActive(false);
+            panelsDialogue.SetActive(true);
         }
         if (index == 0) Question1();
         else if (index == 1) Question2();
