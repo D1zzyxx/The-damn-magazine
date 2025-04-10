@@ -11,11 +11,13 @@ public class HPBar : MonoBehaviour
 {
     private float HP;
     public Image Bar;
+    
 
     private void Awake()
     {
         if (!PlayerPrefs.HasKey("Hearts")) HP = 5f; //Проверяет наличие ключа "Hearts". При его отсутствии, HP будет равен 5
         else PlayerPrefs.GetFloat("Hearts", HP);  // Иначе HP равен данным, которые были сохранены ранее
+
     }
     private void FixedUpdate()
     {
