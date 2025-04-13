@@ -5,7 +5,23 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/GameScene/2Physics.unity
+    guid: 9715eb35396033849beeb41073265ce3
+  - enabled: 1
+    path: Assets/Scenes/GameScene/2Chemistry.unity
+    guid: 85fd307faea3bf04e9b52a103a01824b
+  - enabled: 1
+    path: Assets/Scenes/GameScene/2Corridor.unity
+    guid: a103cfd4ecbd1de49a74929c56db517f
+  - enabled: 1
+    path: Assets/Scenes/GameScene/2Russian.unity
+    guid: b3866f7c93085764fb7069b39a79f708
+  - enabled: 1
+    path: Assets/Scenes/GameScene/+2English.unity
+    guid: 070b835aa6353b343966270fe77ee350
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
