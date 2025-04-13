@@ -81,7 +81,7 @@ public class ScriptsDialogue : MonoBehaviour
             }
             else
             {
-                compare = PlayerPrefs.GetInt("Comparies");                
+                compare = PlayerPrefs.GetInt("Comparies");
                 if (compare == 0)
                 {                    
                     WinText_1();

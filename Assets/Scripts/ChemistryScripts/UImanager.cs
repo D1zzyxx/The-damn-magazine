@@ -18,7 +18,10 @@ public class UImanager : MonoBehaviour
     string inputText;
     int index = 0;
     int comparies = 0;
+    public static bool OpenQuests = false;
+
     List<string> managers = new List<string>() {"Формула воды", "Формула спирта Металон", "Какой элемент называют \"желчью бога Вулкана\"?" };
+    
     private void Awake()
     {
         QuestionText.text = managers[index];
@@ -34,7 +37,9 @@ public class UImanager : MonoBehaviour
         if(index >= managers.Count)
         {
             PlayerPrefs.SetInt("Comparies", comparies);
+            PlayerPrefs.Save();
             panels.SetActive(false);
+            OpenQuests = true;
             panelsDialogue.SetActive(true);
         }
         if (index == 0) Question1();
@@ -77,7 +82,7 @@ public class UImanager : MonoBehaviour
     {
         if (inputField.text != "")
         {
-            if (inputField.text == "CEPA")
+            if (inputField.text == "СЕРА")
             {
                 comparies += 1;
             }
