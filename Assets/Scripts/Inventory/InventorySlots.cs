@@ -26,7 +26,7 @@ public class InventorySlots : MonoBehaviour
         icon.sprite = item.icon;
         slotItem = item;
         icon.enabled = true;
-        ItemObj = obj;
+        ItemObj = obj;        
     }
 
     void slotsClicked()

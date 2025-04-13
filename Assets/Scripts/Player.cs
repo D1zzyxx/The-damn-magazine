@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb; //Создаю переменную для компонента Rigidbody, которая позволяет управлять персонажем
 
+    
+
     private void Awake()
     {
         if (Instance == null)

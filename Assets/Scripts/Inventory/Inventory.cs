@@ -7,16 +7,34 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     public static Inventory instance; //создаем статический объект класса для того, чтобы обращаться к нему из других скриптов
+    public GameObject Inv;
    
     public Transform SlorsParent; //получаем его значения компонента трансформ
-    private InventorySlots[] inventorySlots = new InventorySlots[5]; //массивом элементов класса InventorySlots обозначаем количество слотов
+    public InventorySlots[] inventorySlots = new InventorySlots[5]; //массивом элементов класса InventorySlots обозначаем количество слотов
 
-    private void Start()
+    void Awake()
     {
-        instance = this;
-        for (int i = 0; i < inventorySlots.Length; i++)
+        if (instance == null)
         {
-            inventorySlots[i] = SlorsParent.GetChild(i).GetComponent<InventorySlots>(); //через перебор и метод GetChild получаем все слоты
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    private void Start()
+    {        
+        InitializeSlots();
+        GameSaver.Instance.LoadInventory();
+    }
+    void InitializeSlots()
+    {
+        inventorySlots = new InventorySlots[SlorsParent.childCount];
+        for (int i = 0; i < SlorsParent.childCount; i++)
+        {
+            inventorySlots[i] = SlorsParent.GetChild(i).GetComponent<InventorySlots>();
         }
     }
 
@@ -28,6 +46,36 @@ public class Inventory : MonoBehaviour
             {
                 inventorySlots[i].PutInSlot(item, obj);
                 return;
+            }
+        }
+    }
+    public string[] GetSaveData()
+    {
+        string[] saveSlots = new string[inventorySlots.Length];
+        for (int i = 0; i < inventorySlots.Length; i++)
+        {
+            saveSlots[i] = inventorySlots[i].slotItem?.Name;
+        }
+        return saveSlots;
+    }
+
+    public void LoadSaveData(string[] savedSlots)
+    {
+        for (int i = 0; i < savedSlots.Length; i++)
+        {
+            if (!string.IsNullOrEmpty(savedSlots[i]))
+            {
+                Item item = Resources.Load<Item>("Item/" + savedSlots[i]);
+                if (item != null)
+                {
+                    // Создаем новый объект предмета
+                    GameObject newItem = new GameObject();
+                    newItem.AddComponent<SpriteRenderer>().sprite = item.icon;
+                    newItem.AddComponent<PickUpItem>().item = item;
+                    newItem.SetActive(false);
+
+                    inventorySlots[i].PutInSlot(item, newItem);
+                }
             }
         }
     }
