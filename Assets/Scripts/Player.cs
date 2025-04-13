@@ -10,8 +10,10 @@ public class Player : MonoBehaviour
     private PlayerInputActions playerInputActions; //Переменная, которая подключает скрипт движения персонажа
 
     private Rigidbody2D rb; //Создаю переменную для компонента Rigidbody, которая позволяет управлять персонажем
+    private Vector2 movement;
 
-    
+    public Animator animator;
+    private SpriteRenderer rbSprite;
 
     private void Awake()
     {
@@ -21,6 +23,8 @@ public class Player : MonoBehaviour
         }
 
         rb = GetComponent<Rigidbody2D>(); //Инициализирую компонент Rigidbody2D, которая позволяет персонажу иметь физические свойства
+        animator = GetComponent<Animator>();
+        rbSprite = GetComponent<SpriteRenderer>();
         playerInputActions = new PlayerInputActions(); //Инициализирую Input System, она позволяет персонажу передвигаться  
         playerInputActions.Enable(); //Подключение системы ввода(Input System)
     }
@@ -29,6 +33,18 @@ public class Player : MonoBehaviour
         Vector2 inputVector = playerInputActions.Player.Move.ReadValue<Vector2>(); 
 
         return inputVector;
+    }
+    private void Update()
+    {
+        animator.SetFloat("moveX", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
+
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+        if (movement.x != 0)
+        {
+            // Меняем направление спрайта
+            rbSprite.flipX = (movement.x > 0);
+        }
     }
 
     private void FixedUpdate()
