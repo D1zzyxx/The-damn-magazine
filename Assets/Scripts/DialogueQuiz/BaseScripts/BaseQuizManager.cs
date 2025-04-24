@@ -1,10 +1,10 @@
-using System;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-using JetBrains.Annotations;
 
-public class QuizManager : MonoBehaviour
+public abstract class BaseQuizManager : MonoBehaviour
 {
     /* Данный скрипт занимается:
      * Управляет последовательностью вопросов
@@ -25,6 +25,8 @@ public class QuizManager : MonoBehaviour
      *  и необходимые методы с реализацие внутри
      */
 
+    private BaseDialogueManager dialogueManager;
+
     #region Переменные (Поля)
     private int currentQuestIndex; // Индекс текущего вопроса
     private int correctAnswersCount; // Счетчик правильных ответов
@@ -43,65 +45,24 @@ public class QuizManager : MonoBehaviour
     public GameObject itemPrefab; // Prefab предмета (назназначить нужно в инспекторе)
     #endregion
 
-    #region Массив вопросов
-    private class Question
+    public abstract class Question
     {
         public string questionText; //Текст вопроса
         public string[] options; //Массив вариантов ответов
         public int correctAnswerIndex; //Индекс правильного ответа (-1, если правильного ответа нет)
 
-        public Question(string text, string[] opts, int correctIndex)
+        protected Question(string text, string[] opts, int correctIndex)
         {
             questionText = text;
             options = opts;
             correctAnswerIndex = correctIndex;
         }
     }
-
-    private Question[] questions =
-    {
-        new Question("Кто является автором романа Мастер и Маргарита?",
-            new string[] { "Михаил Булгаков", "Федор Достоевский", "Лев Толстой" }, 0),
-        new Question("Какой крем использовала Маргарита, чтобы преобразиться перед полетом?",
-            new string[] {"Крем Азазелло", "Крем Воланда", "Крем Бегемота"}, 0),
-        new Question("Сколько глав в романе посвящено евангельским страницам?",
-            new string[] {"2", "4" , "6"}, 1),
-        new Question("Что, по мнению Воланда, испортило москвичей?",
-            new string[] {"Деньги", "Власть", "Квартиный вопрос"}, 2),
-        new Question("Как трансформируется образ Иешуа в романе по сравнению с традиционным библейским образом Иисуса?",
-            new string[] {"Он более агрессивный и воинственный", 
-                          "Он более агрессивный и воинственный", 
-                          "Он более агрессивный и воинственный"}, 3), // Нет правильного ответа, так как индекс правильного ответа 3 (0, 1, 2, 3),
-                                                                      // всего максимальный индекс ответа у кнопки 2, так мы сделали, что нет правильного ответа
-                                                                      // В принципе и его не получиться получить, возможно не лучшее решение, но работает
-                                                                      // Хотя qwen chat считает что лучше использовать индекс -1 что мне не совсем понятно почему
-        new Question("Кто является автором романа Война и мир",
-            new string[] { "Лев Толстой", "Федор Достоевский", "Иван Тургенев" }, 0),
-        new Question("Назовите главных героев романа Война и мир",
-            new string[] {"Андрей Болконский, Наташа Ростова, Пьер Безухов",
-                          "Евгений Онегин, Татьяна Ларина, Владимир Ленский",
-                          "Родион Раскольников, Соня Мармеладова, Порфирий Петрович"}, 0),
-        new Question("Какие исторические события описываются в романе?",
-            new string[] {"Отечественная война 1812 года", "Крымская война 1853-1856 годов", "Русско-турецкая война 1877-1878 годов"}, 0),
-        new Question("Как в романе раскрывается проблема истинного и ложного героизма?",
-            new string[] {"Через противопоставление Кутузова и Наполеона",
-                         "Через сравнение Пьера Безухова и Федора Долохова",
-                         "Через анализ поведения Николая Ростова на войне"}, 1),
-        new Question("Каким образом Толстой показывает влияние кризисного положения в государстве на характеры и моральные ценности людей?",
-            new string[] {"Через изменение отношения к войне у главных героев",
-                              "Через описание разорения дворянских семей",
-                              "Через трансформацию мировоззрения Пьера Безухова"}, 1)
-    };
-    #endregion
-
-    private void Start()
-    {
-        isQuizPassed = false;
-        panelQuiz.SetActive(false); // Отключаем панель викторины при старте
-    }
+    protected abstract Question[] questions { get; }
+    protected abstract void OnQuizEnd(); // Логика завершения (например, запуск диалога)
 
     // Метод для начала викторины
-    public void StartQuiz()
+    public virtual void StartQuiz()
     {
         /*
          * По логике нужно сделать через флажок
@@ -117,9 +78,8 @@ public class QuizManager : MonoBehaviour
             isQuizPassed = true; // Ставим флажок того, что викторина пройдена
         }
     }
-
     // Метод для отображения текущего вопроса
-    private void DisplayQuestion()
+    public virtual void DisplayQuestion()
     {
         // Проверяем, не закончились ли вопросы
         if (currentQuestIndex >= questions.Length)
@@ -152,7 +112,7 @@ public class QuizManager : MonoBehaviour
     }
 
     // Метод для проверки ответа
-    public void CheckAnswer(int selectedAnswerIndex)
+    public virtual void CheckAnswer(int selectedAnswerIndex)
     {
         // Получаем текущий вопрос
         Question currentQuestion = questions[currentQuestIndex];
@@ -192,7 +152,7 @@ public class QuizManager : MonoBehaviour
     }
 
     // Метод для завершения викторины
-    private void EndQuiz()
+    public virtual void EndQuiz()
     {
         panelQuiz.SetActive(false); // Отключаем панель викторины
 
@@ -200,13 +160,12 @@ public class QuizManager : MonoBehaviour
     }
 
     // Метод для запуска второго диалога и выпадения предмета
-    private void StartDialogueAndDropItem()
+    public virtual void StartDialogueAndDropItem()
     {
         // Отключаем панель викторины
         panelQuiz.SetActive(false);
 
         // Запускаем второй диалог через DialogueManager
-        DialogueManager dialogueManager = FindObjectOfType<DialogueManager>();
         if (dialogueManager != null)
         {
             dialogueManager.StartSecondDialogue(); // Предполагается, что DialogueManager содержит метод StartSecondDialogue()
@@ -217,7 +176,7 @@ public class QuizManager : MonoBehaviour
     }
 
     // Метод для выпадения предмета
-    private void DropItem()
+    public virtual void DropItem()
     {
         // Позиция, где появится предмет
 
