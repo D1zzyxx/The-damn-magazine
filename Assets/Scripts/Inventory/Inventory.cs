@@ -9,7 +9,9 @@ public class Inventory : MonoBehaviour
     public static Inventory instance; //создаем статический объект класса для того, чтобы обращаться к нему из других скриптов
    
     public Transform SlorsParent; //получаем его значения компонента трансформ
-    private InventorySlots[] inventorySlots = new InventorySlots[5]; //массивом элементов класса InventorySlots обозначаем количество слотов
+    public InventorySlots[] inventorySlots = new InventorySlots[5]; //массивом элементов класса InventorySlots обозначаем количество слотов
+
+    public List<InventorySlots> slots = new List<InventorySlots>(5);
 
     private void Start()
     {
