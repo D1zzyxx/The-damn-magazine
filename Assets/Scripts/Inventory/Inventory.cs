@@ -10,7 +10,9 @@ public class Inventory : MonoBehaviour
     public GameObject Inv;
    
     public Transform SlorsParent; //получаем его значения компонента трансформ
-    private InventorySlots[] inventorySlots = new InventorySlots[5]; //массивом элементов класса InventorySlots обозначаем количество слотов
+    public InventorySlots[] inventorySlots = new InventorySlots[5]; //массивом элементов класса InventorySlots обозначаем количество слотов
+
+    public List<InventorySlots> slots = new List<InventorySlots>(5);
 
     void Awake()
     {
