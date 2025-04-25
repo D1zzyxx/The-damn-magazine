@@ -10,17 +10,19 @@ public class Inventory : MonoBehaviour
     public GameObject Inv;
    
     public Transform SlorsParent; //получаем его значения компонента трансформ
-    public InventorySlots[] inventorySlots = new InventorySlots[5]; //массивом элементов класса InventorySlots обозначаем количество слотов
+    private InventorySlots[] inventorySlots = new InventorySlots[5]; //массивом элементов класса InventorySlots обозначаем количество слотов
 
     void Awake()
     {
         if (instance == null)
         {
-            instance = this;
+        instance = this;
+        for (int i = 0; i < inventorySlots.Length; i++)
             DontDestroyOnLoad(gameObject);
         }
         else
         {
+            inventorySlots[i] = SlorsParent.GetChild(i).GetComponent<InventorySlots>(); //через перебор и метод GetChild получаем все слоты
             Destroy(gameObject);
         }
     }

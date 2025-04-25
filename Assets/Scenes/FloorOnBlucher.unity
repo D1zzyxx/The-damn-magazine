@@ -1745,6 +1745,7 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+<<<<<<< HEAD
 --- !u!114 &1306167265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1762,6 +1763,8 @@ MonoBehaviour:
   minY: 0
   maxX: 0
   maxY: 0
+=======
+>>>>>>> origin/branchIlgizar
 --- !u!1 &1427512954
 GameObject:
   m_ObjectHideFlags: 0

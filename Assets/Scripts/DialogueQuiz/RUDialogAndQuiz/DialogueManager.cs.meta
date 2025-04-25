@@ -1,16 +1,9 @@
 fileFormatVersion: 2
 <<<<<<<< HEAD:Assets/PlayerInputActions.cs.meta
-<<<<<<< HEAD
-guid: 828209867dbafa64987170386308e708
-========
-guid: 720119eab04e5cb45a7b590dbb69a9bb
->>>>>>>> origin/branchIlgizar:Assets/Scripts/Camera1.cs.meta
-=======
-guid: fe116649448266f49b1c7b6a0ff23833
+guid: 1045280b1f96ac0409c22138771e511b
 ========
 guid: c91a01652010fcd4a9f734a65e3e8edd
 >>>>>>>> branchIlgizar:Assets/Scripts/DialogueManager.cs.meta
->>>>>>> origin/branchIlgizar
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

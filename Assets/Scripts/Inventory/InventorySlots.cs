@@ -22,11 +22,18 @@ public class InventorySlots : MonoBehaviour
     public void PutInSlot(Item item, GameObject obj)
     {
         //калдем предметы в слот, заполняя компоненты слота компонентами предмета
+<<<<<<< HEAD
         icon.color = Color.white;
         icon.sprite = item.icon;
         slotItem = item;
         icon.enabled = true;
         ItemObj = obj;        
+=======
+        icon.sprite = item.icon;
+        slotItem = item;
+        icon.enabled = true;
+        ItemObj = obj;
+>>>>>>> origin/branchIlgizar
     }
 
     void slotsClicked()
@@ -42,6 +49,9 @@ public class InventorySlots : MonoBehaviour
         slotItem = null;
         ItemObj = null;
         icon.sprite = null;
+<<<<<<< HEAD
         icon.enabled = false;
+=======
+>>>>>>> origin/branchIlgizar
     }
 }

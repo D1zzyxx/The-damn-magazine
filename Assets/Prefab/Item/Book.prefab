@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!1 &2875903580758911736
+=======
+--- !u!1 &8555479861661144813
+>>>>>>> origin/branchIlgizar
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +12,15 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 2677026921581240437}
   - component: {fileID: 6241388543360139918}
   - component: {fileID: 5239037236867145648}
   - component: {fileID: 4920558947880768703}
+=======
+  - component: {fileID: 1325139303214529126}
+  - component: {fileID: 5281238877658032253}
+>>>>>>> origin/branchIlgizar
   m_Layer: 0
   m_Name: Book
   m_TagString: Untagged
@@ -19,28 +28,48 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &2677026921581240437
+=======
+--- !u!4 &1325139303214529126
+>>>>>>> origin/branchIlgizar
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2875903580758911736}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.271995, y: -0.061896414, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+=======
+  m_GameObject: {fileID: 8555479861661144813}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.08, y: 0.08, z: 0.01}
+>>>>>>> origin/branchIlgizar
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!212 &6241388543360139918
+=======
+--- !u!212 &5281238877658032253
+>>>>>>> origin/branchIlgizar
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2875903580758911736}
+=======
+  m_GameObject: {fileID: 8555479861661144813}
+>>>>>>> origin/branchIlgizar
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -75,8 +104,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.4433962, g: 0.2990833, b: 0.2990833, a: 1}
+=======
+  m_Sprite: {fileID: -6878475502275857280, guid: 55b3fc2df30fdb04fbcf49a5fecc2de4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+>>>>>>> origin/branchIlgizar
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,6 +120,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!61 &5239037236867145648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -145,3 +180,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: a16fa8e2bb89f9b4fb13a7a86c45adca, type: 2}
+=======
+>>>>>>> origin/branchIlgizar
