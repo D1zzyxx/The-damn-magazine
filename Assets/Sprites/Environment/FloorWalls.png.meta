@@ -1,0 +1,349 @@
+fileFormatVersion: 2
+guid: 14d772fead2aea347afc0b4388ffccee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8913753002171763048
+    second: "\u0410\u0441\u0441\u0435\u0442( \u041F\u043E\u043B \u0421\u0442\u0435\u043D\u044B)_0"
+  - first:
+      213: -4774345767992305072
+    second: "\u0410\u0441\u0441\u0435\u0442( \u041F\u043E\u043B \u0421\u0442\u0435\u043D\u044B)_1"
+  - first:
+      213: 3941989786527831128
+    second: "\u0410\u0441\u0441\u0435\u0442( \u041F\u043E\u043B \u0421\u0442\u0435\u043D\u044B)_2"
+  - first:
+      213: 8899139573875842313
+    second: "\u0410\u0441\u0441\u0435\u0442( \u041F\u043E\u043B \u0421\u0442\u0435\u043D\u044B)_3"
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u0410\u0441\u0441\u0435\u0442( \u041F\u043E\u043B \u0421\u0442\u0435\u043D\u044B)_1"
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 148
+        width: 143
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05addefc1dd1ebdb0800000000000000
+      internalID: -4774345767992305072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0410\u0441\u0441\u0435\u0442( \u041F\u043E\u043B \u0421\u0442\u0435\u043D\u044B)_2"
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 149
+        width: 48
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854953643d2c4b630800000000000000
+      internalID: 3941989786527831128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0410\u0441\u0441\u0435\u0442( \u041F\u043E\u043B \u0421\u0442\u0435\u043D\u044B)_3"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 10
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d9d73fa48108b70800000000000000
+      internalID: 8899139573875842313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorWalls_1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 127
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d7ed7aa2f49fe48bc3c9e3eef55ed7
+      internalID: -995216670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorWalls_6
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 58
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6996d0f36880d14e86e76fc438a3b71
+      internalID: -565803699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorWalls_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 58
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed6e6660c91ed644bc7706800ae220f
+      internalID: 1017244387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorWalls_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 151
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cf4e4d6f84ff14088111282d614b30
+      internalID: -1492412599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorWalls_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 175
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37ccfdc74c9387488268189f0b11ff4
+      internalID: 993713410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorWalls_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 175
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1741c728c5e584b850355826553cda
+      internalID: -939423504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorWalls_3
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 151
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3b4ab5e17eb2e45a721d75b700010e
+      internalID: 826257572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bfcfd8bfd65209b4aa6b98e718036675
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FloorWalls_: 796831727
+      FloorWalls_0: 993713410
+      FloorWalls_1: -995216670
+      FloorWalls_2: -939423504
+      FloorWalls_3: 826257572
+      FloorWalls_4: -1492412599
+      FloorWalls_5: 796831727
+      FloorWalls_6: -565803699
+      FloorWalls_7: 1017244387
+      FloorWalls_8: -1329256556
+      FloorWalls_9: -1076987560
+      "\u0410\u0441\u0441\u0435\u0442( \u041F\u043E\u043B \u0421\u0442\u0435\u043D\u044B)_0": 8913753002171763048
+      "\u0410\u0441\u0441\u0435\u0442( \u041F\u043E\u043B \u0421\u0442\u0435\u043D\u044B)_1": -4774345767992305072
+      "\u0410\u0441\u0441\u0435\u0442( \u041F\u043E\u043B \u0421\u0442\u0435\u043D\u044B)_2": 3941989786527831128
+      "\u0410\u0441\u0441\u0435\u0442( \u041F\u043E\u043B \u0421\u0442\u0435\u043D\u044B)_3": 8899139573875842313
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
