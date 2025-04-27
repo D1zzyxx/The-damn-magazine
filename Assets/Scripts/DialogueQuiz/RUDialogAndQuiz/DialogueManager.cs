@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
 
     #region Поля
     public GameObject player; // Ссылка на игрока, далее у него будем ВКЛ/ВЫКЛ Ходьбу
+    Player playerMove;
 
     public TextMeshProUGUI line; // Ссылка на TMPUGI для вывода строки
     public Button buttonNext; // Ссылка на кнопку "Далее"
@@ -63,7 +64,11 @@ public class DialogueManager : MonoBehaviour
         indexLine = 0; // Обнуляем индекс
         isOrder = true; // Первым говорит преподаватель
         isSecondDialogue = false; // Начинаем с первого диалога
-
+        playerMove = player.GetComponent<Player>();
+        if(playerMove!=null)
+        {
+            Debug.LogError("Компонент не получен!");
+        }
     }
 
     // Запускается при соприкосновении с коллайдером
@@ -90,7 +95,7 @@ public class DialogueManager : MonoBehaviour
         panelDialog.SetActive(true); // Включаем панель диалога
         ActivateDialogue(); // Показываем первую строку диалога
 
-        Player playerMove = player.GetComponent<Player>(); // Получаем скрипт для дальнейших манипуляций
+       // Player playerMove = player.GetComponent<Player>(); // Получаем скрипт для дальнейших манипуляций
         playerMove.enabled = false; //Отключаем ходьбу
 
     }
@@ -183,7 +188,8 @@ public class DialogueManager : MonoBehaviour
         buttonNext.interactable = false; // Деактивируем кнопку "Далее"
         Debug.Log("Второй диалог завершен. Предмет должен выпасть.");
 
-        Player playerMove = player.GetComponent<Player>(); // Получаем компонент для дальнейших манипуляций
+       // Player playerMove = player.GetComponent<Player>(); // Получаем компонент для дальнейших манипуляций
+        Debug.Log("компонент игрока получен");
         playerMove.enabled = true; //Включаем ходьбу по окончанию диалога
     }
     #endregion
