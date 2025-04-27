@@ -8,6 +8,7 @@ TagManager:
   - Block
   - Teacher
   - TeacherChemistry
+  - points
   layers:
   - Default
   - TransparentFX
