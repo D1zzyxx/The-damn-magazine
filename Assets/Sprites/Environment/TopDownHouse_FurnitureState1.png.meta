@@ -476,10 +476,10 @@ TextureImporter:
       name: TopDownHouse_FurnitureState1_13
       rect:
         serializedVersion: 2
-        x: 69
-        y: 129
-        width: 24
-        height: 96
+        x: 80
+        y: 176
+        width: 12
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
