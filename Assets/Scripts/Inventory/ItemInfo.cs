@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//зачем я пишу так много...
+//пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ...
 public class ItemInfo : MonoBehaviour
 {
-    //объявляем переменные окна информации об объекте
+    //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     public static ItemInfo Instance;
     private Image BackGround;
     private Text Title;
@@ -21,7 +21,7 @@ public class ItemInfo : MonoBehaviour
 
     private void Start()
     {
-        //получаем компоненты для дальнейшего использования, да, костыльно...
+        //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ...
         Instance = this;
         BackGround = GetComponent<Image>();
         Title = transform.GetChild(0).GetComponent<Text>();
@@ -30,30 +30,27 @@ public class ItemInfo : MonoBehaviour
         DescriptionLore = transform.GetChild(3).GetComponent<Text>();
     }
 
-    public void ChangeInfo(Item item) //назначает все компоненты предмета на компоненты окна
+    public void ChangeInfo(Item item) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
     {
         Title.text = item.Name;
         Description.text = item.Discriptin;
         Icon.sprite = item.icon;
         DescriptionLore.text = item.DiscriptinLore;
     }
-    public void Drop() //выбрасываем предмет
+    public void Drop() //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {       
-        Vector2 DropPos = new(Player.Instance.transform.position.x + 3f, Player.Instance.transform.position.y); //получаем позицию игрока и чуть плюсуем чтобы не на месте игрока было
-        ItemObj.SetActive(true); //врубаем предмет на сцене
-        ItemObj.transform.position = DropPos; //назначаем выкинутому предмету дропоз
-        CurrentSlot.ClearSlot(); //чистим слот
+        Vector2 DropPos = new(Player.Instance.transform.position.x + 3f, Player.Instance.transform.position.y); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+        ItemObj.SetActive(true); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        ItemObj.transform.position = DropPos; //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+        CurrentSlot.ClearSlot(); //пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
         OffInfo(); 
     }
 
     public void UseItem()
     {
         ItemUse.Instance.Use(InfoItem);
-<<<<<<< HEAD
         CurrentSlot.ClearSlot();
         OffInfo();
-=======
->>>>>>> origin/branchIlgizar
     }
 
     public void ShowInfo(Item item, GameObject itemObj, InventorySlots currentSlot)
@@ -66,7 +63,7 @@ public class ItemInfo : MonoBehaviour
         gameObject.transform.localScale = Vector3.one; 
 
     }
-    public void OffInfo() //закрываем окно
+    public void OffInfo() //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
     {
         gameObject.transform.localScale = Vector3.zero;
     }

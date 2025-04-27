@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    public static Inventory instance; //создаем статический объект класса для того, чтобы обращаться к нему из других скриптов
+    public static Inventory instance; //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     public GameObject Inv;
    
-    public Transform SlorsParent; //получаем его значения компонента трансформ
-    public InventorySlots[] inventorySlots = new InventorySlots[5]; //массивом элементов класса InventorySlots обозначаем количество слотов
+    public Transform SlorsParent; //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    public InventorySlots[] inventorySlots = new InventorySlots[5]; //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ InventorySlots пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
     public List<InventorySlots> slots = new List<InventorySlots>(5);
 
@@ -18,14 +18,15 @@ public class Inventory : MonoBehaviour
     {
         if (instance == null)
         {
-        instance = this;
-        for (int i = 0; i < inventorySlots.Length; i++)
-            DontDestroyOnLoad(gameObject);
+            instance = this;
         }
         else
         {
-            inventorySlots[i] = SlorsParent.GetChild(i).GetComponent<InventorySlots>(); //через перебор и метод GetChild получаем все слоты
             Destroy(gameObject);
+        }
+        for (int i = 0; i < inventorySlots.Length; i++)
+        {
+            inventorySlots[i] = SlorsParent.GetChild(i).GetComponent<InventorySlots>(); //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ GetChild пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         }
     }
     private void Start()
@@ -42,7 +43,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void PutEmptySlot(Item item, GameObject obj) //метод, который делает проверку свободных слотов и кладет предмет в первый свободный слот
+    public void PutEmptySlot(Item item, GameObject obj) //пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
     {
         for (int i = 0; i < inventorySlots.Length; i++)
         {
@@ -72,7 +73,7 @@ public class Inventory : MonoBehaviour
                 Item item = Resources.Load<Item>("Item/" + savedSlots[i]);
                 if (item != null)
                 {
-                    // Создаем новый объект предмета
+                    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                     GameObject newItem = new GameObject();
                     newItem.AddComponent<SpriteRenderer>().sprite = item.icon;
                     newItem.AddComponent<PickUpItem>().item = item;

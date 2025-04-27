@@ -6,14 +6,14 @@ using UnityEngine.UI;
 
 public class InventorySlots : MonoBehaviour
 {
-    public Item slotItem; //предмет в слоте
-    public GameObject ItemObj; //предмет игровой
+    public Item slotItem; //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
+    public GameObject ItemObj; //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
     Image icon;
     Button button;
     private void Start()
     {
-        //получаем компоненты
+        //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         icon = gameObject.transform.GetChild(0).GetComponent<Image>();
         button = GetComponent<Button>();
         button.onClick.AddListener(slotsClicked);
@@ -21,37 +21,25 @@ public class InventorySlots : MonoBehaviour
 
     public void PutInSlot(Item item, GameObject obj)
     {
-        //калдем предметы в слот, заполняя компоненты слота компонентами предмета
-<<<<<<< HEAD
-        icon.color = Color.white;
-        icon.sprite = item.icon;
-        slotItem = item;
-        icon.enabled = true;
-        ItemObj = obj;        
-=======
+        //пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         icon.sprite = item.icon;
         slotItem = item;
         icon.enabled = true;
         ItemObj = obj;
->>>>>>> origin/branchIlgizar
     }
 
     void slotsClicked()
     {
-        //если слот не пустой, то открывается окно инфы слота
+        //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         if (slotItem != null)
-            ItemInfo.Instance.ShowInfo(slotItem, ItemObj, this); //пеедаем инфу о предмете в лоте в окно
+            ItemInfo.Instance.ShowInfo(slotItem, ItemObj, this); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
     }
 
     public void ClearSlot()
     {
-        //очищаем слот
+        //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
         slotItem = null;
         ItemObj = null;
         icon.sprite = null;
-<<<<<<< HEAD
-        icon.enabled = false;
-=======
->>>>>>> origin/branchIlgizar
     }
 }
