@@ -65,7 +65,7 @@ public class DialogueManager : MonoBehaviour
         isOrder = true; // Первым говорит преподаватель
         isSecondDialogue = false; // Начинаем с первого диалога
         playerMove = player.GetComponent<Player>();
-        if(playerMove!=null)
+        if(playerMove==null)
         {
             Debug.LogError("Компонент не получен!");
         }
@@ -93,9 +93,7 @@ public class DialogueManager : MonoBehaviour
         indexLine = 0; // Обнуляем индекс
         isOrder = true; // Первым говорит преподаватель
         panelDialog.SetActive(true); // Включаем панель диалога
-        ActivateDialogue(); // Показываем первую строку диалога
-
-       // Player playerMove = player.GetComponent<Player>(); // Получаем скрипт для дальнейших манипуляций
+        ActivateDialogue(); // Показываем первую строку диалога       
         playerMove.enabled = false; //Отключаем ходьбу
 
     }

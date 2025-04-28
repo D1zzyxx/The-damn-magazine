@@ -7,6 +7,7 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
     [Header("Базовые характиристики")]
+    public int ID;
     public string Name = " ";
     public string Discriptin = "";
     public string DiscriptinLore = "";

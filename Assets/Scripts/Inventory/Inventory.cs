@@ -32,7 +32,7 @@ public class Inventory : MonoBehaviour
     private void Start()
     {        
         InitializeSlots();
-        GameSaver.Instance.LoadInventory();
+       // GameSaver.Instance.LoadInventory();
     }
     void InitializeSlots()
     {

@@ -12,12 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bffe921814abcb54c8ea5484ff3ac341, type: 3}
   m_Name: Bun
   m_EditorClassIdentifier: 
+  ID: 2
   Name: Bun
-  Discriptin: "\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442
-    2 \u0441\u0435\u0440\u0434\u0435\u0447\u043A\u0430"
-  DiscriptinLore: "\u0412\u043A\u0443\u0441\u043D\u0435\u0439\u0448\u0430\u044F \u0431\u0443\u043B\u043E\u0447\u043A\u0430,
-    \u043F\u0440\u0438\u0442\u044F\u0433\u0430\u0442\u0435\u043B\u044C\u043D\u0430\u044F
-    \u0434\u043B\u044F \u0432\u0441\u0435\u0445 \u0441\u0442\u0443\u0434\u0435\u043D\u0442\u043E\u0432"
+  Discriptin: 
+  DiscriptinLore: 
   icon: {fileID: 2184277102450767653, guid: 3b32d96d091a68b4489652690a2c5849, type: 3}
   isHealing: 1
   healingPower: 2

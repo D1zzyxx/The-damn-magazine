@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private float movingSpeed = 5f;
     private PlayerInputActions playerInputActions; //Переменная, которая подключает скрипт движения персонажа
+    public bool canMove = true;
 
     private Rigidbody2D rb; //Создаю переменную для компонента Rigidbody, которая позволяет управлять персонажем
     private Vector2 movement;
