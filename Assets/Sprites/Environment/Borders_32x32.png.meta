@@ -1,0 +1,727 @@
+fileFormatVersion: 2
+guid: 86631926deca54a4e9bdd0f9a5983ca1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9107469233532111563
+    second: Borders_32x32_0
+  - first:
+      213: -8888180356594381361
+    second: Borders_32x32_1
+  - first:
+      213: -6935583194321622802
+    second: Borders_32x32_2
+  - first:
+      213: -7995131309425777000
+    second: Borders_32x32_3
+  - first:
+      213: -6319473201146303412
+    second: Borders_32x32_4
+  - first:
+      213: 8698416670539465522
+    second: Borders_32x32_5
+  - first:
+      213: -7612572159268699437
+    second: Borders_32x32_6
+  - first:
+      213: -3369190754625909648
+    second: Borders_32x32_7
+  - first:
+      213: -391512828648584847
+    second: Borders_32x32_8
+  - first:
+      213: 5502521788246532438
+    second: Borders_32x32_9
+  - first:
+      213: 8987985363852563798
+    second: Borders_32x32_10
+  - first:
+      213: -2447645237504314805
+    second: Borders_32x32_11
+  - first:
+      213: 8094926208548771355
+    second: Borders_32x32_12
+  - first:
+      213: -6278433331447200554
+    second: Borders_32x32_13
+  - first:
+      213: -2297422170221718906
+    second: Borders_32x32_14
+  - first:
+      213: 1429082714890338285
+    second: Borders_32x32_15
+  - first:
+      213: -2821488864042842918
+    second: Borders_32x32_16
+  - first:
+      213: 5065421662732749192
+    second: Borders_32x32_17
+  - first:
+      213: -5228686541171632931
+    second: Borders_32x32_18
+  - first:
+      213: -2276476269782426067
+    second: Borders_32x32_19
+  - first:
+      213: 3067344575786029605
+    second: Borders_32x32_20
+  - first:
+      213: -2167440080909154174
+    second: Borders_32x32_21
+  - first:
+      213: 7893087765390442638
+    second: Borders_32x32_22
+  - first:
+      213: 3746999813181403702
+    second: Borders_32x32_23
+  - first:
+      213: 8369390219316895795
+    second: Borders_32x32_24
+  - first:
+      213: 9008789614741349864
+    second: Borders_32x32_25
+  - first:
+      213: 6425656457441455423
+    second: Borders_32x32_26
+  - first:
+      213: -1418164421779015798
+    second: Borders_32x32_27
+  - first:
+      213: -6785686179094468850
+    second: Borders_32x32_28
+  - first:
+      213: -5465829974103760944
+    second: Borders_32x32_29
+  - first:
+      213: 1459907451649100637
+    second: Borders_32x32_30
+  - first:
+      213: -8351644326511443390
+    second: Borders_32x32_31
+  - first:
+      213: -1674825315377982397
+    second: Borders_32x32_32
+  - first:
+      213: 4154698137643251289
+    second: Borders_32x32_33
+  - first:
+      213: -1080213611519425487
+    second: Borders_32x32_34
+  - first:
+      213: 8938194560330269462
+    second: Borders_32x32_35
+  - first:
+      213: 4563052319233604007
+    second: Borders_32x32_36
+  - first:
+      213: 6287331126525408325
+    second: Borders_32x32_37
+  - first:
+      213: -1870492673161128065
+    second: Borders_32x32_38
+  - first:
+      213: -5387185691485638444
+    second: Borders_32x32_39
+  - first:
+      213: 1783714837256882863
+    second: Borders_32x32_40
+  - first:
+      213: -4140557022933030448
+    second: Borders_32x32_41
+  - first:
+      213: 3416577895561607553
+    second: Borders_32x32_42
+  - first:
+      213: -8869674234477505354
+    second: Borders_32x32_43
+  - first:
+      213: 3671885669491109185
+    second: Borders_32x32_44
+  - first:
+      213: 6173434350481056043
+    second: Borders_32x32_45
+  - first:
+      213: -8707950025560635766
+    second: Borders_32x32_46
+  - first:
+      213: -7248040968936709975
+    second: Borders_32x32_47
+  - first:
+      213: 6393021045030715491
+    second: Borders_32x32_48
+  - first:
+      213: 6074056521551071951
+    second: Borders_32x32_49
+  - first:
+      213: -5527804773682635062
+    second: Borders_32x32_50
+  - first:
+      213: -8114813097082553719
+    second: Borders_32x32_51
+  - first:
+      213: -6643193088969329305
+    second: Borders_32x32_52
+  - first:
+      213: 4352026878024630582
+    second: Borders_32x32_53
+  - first:
+      213: 6662716236209941421
+    second: Borders_32x32_54
+  - first:
+      213: -7298679812800310939
+    second: Borders_32x32_55
+  - first:
+      213: -5662558188730680193
+    second: Borders_32x32_56
+  - first:
+      213: -8366531900777175595
+    second: Borders_32x32_57
+  - first:
+      213: -4466453118724297502
+    second: Borders_32x32_58
+  - first:
+      213: -7717392473385475231
+    second: Borders_32x32_59
+  - first:
+      213: 8772064244390752304
+    second: Borders_32x32_60
+  - first:
+      213: 7688822729398227053
+    second: Borders_32x32_61
+  - first:
+      213: 8705038101777887235
+    second: Borders_32x32_62
+  - first:
+      213: 6858191953315664569
+    second: Borders_32x32_63
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Borders_32x32_68
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 820
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9493ceed58fe56647ad67d92618aaf14
+      internalID: -1161292035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_17
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 808
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf1d7ae543597044934438ce04b0bc6
+      internalID: -436068310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_69
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 820
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b066b8b0f1a4c144b090f755251b55c
+      internalID: 1660583573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_70
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 808
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23ab7b70ce7c6040bd2a3e89224bc9f
+      internalID: 8216360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_71
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 768
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e50c944f5bfd2044b4ff3a844e60459
+      internalID: -1109241362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_73
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 820
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec612affb352044d989f090be30dee3
+      internalID: 625430188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_74
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 768
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e69cbfbcc912c45afb8a8bbd7fc372
+      internalID: 1417290472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_75
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 768
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0859f23244a8db4ca230bad43aea660
+      internalID: -1769816874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_0
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 820
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8acff6e58659e7049b7dad0125b201d3
+      internalID: 648738007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_1
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 808
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66cb51d9a2183124a9a9da280a2d15e8
+      internalID: -445406602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 820
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69bf583ffdbe58a49ade6202a07f0e97
+      internalID: -2116644066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 808
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74c8fde5e66e6d4795f4f043d2688be
+      internalID: 1978417036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df95e3aba67875040a7161c93e57ffa3
+      internalID: 245128232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_5
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 768
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54767e4324cea37479f2993105b4ea80
+      internalID: -441634592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_6
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 768
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a7a37dd2c701248a3b1207b2af5b11
+      internalID: 933989040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_7
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 820
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8284a3f96a1fad4393bab871f39daef
+      internalID: -2028329423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_10
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 916
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f93b97027fe954998877fc336e4b03
+      internalID: -2144346025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_8
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 511
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1037531ef9631043beb9709b5843aa1
+      internalID: 1533458857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borders_32x32_9
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 916
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a00d1eaa3d02249b90c25d0d4ad9cd
+      internalID: -1689879014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7eae4a28df9c3fb4d9ecc9f97c660952
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Borders_32x32_0: 648738007
+      Borders_32x32_1: -445406602
+      Borders_32x32_10: -2144346025
+      Borders_32x32_17: -436068310
+      Borders_32x32_2: -2116644066
+      Borders_32x32_3: 1978417036
+      Borders_32x32_4: 245128232
+      Borders_32x32_5: -441634592
+      Borders_32x32_6: 933989040
+      Borders_32x32_64: -1416634900
+      Borders_32x32_65: 797298827
+      Borders_32x32_66: -798196409
+      Borders_32x32_67: 713445142
+      Borders_32x32_68: -1161292035
+      Borders_32x32_69: 1660583573
+      Borders_32x32_7: -2028329423
+      Borders_32x32_70: 8216360
+      Borders_32x32_71: -1109241362
+      Borders_32x32_72: 96340146
+      Borders_32x32_73: 625430188
+      Borders_32x32_74: 1417290472
+      Borders_32x32_75: -1769816874
+      Borders_32x32_8: 1533458857
+      Borders_32x32_9: -1689879014
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
