@@ -369,6 +369,7 @@ RectTransform:
   - {fileID: 157373531}
   - {fileID: 962190455}
   - {fileID: 1307413301}
+  - {fileID: 599387442}
   m_Father: {fileID: 152857802}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1517,6 +1518,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 405955018954242620, guid: a6d984242d6e4da4a84eda7e27c0ba7a, type: 3}
   m_PrefabInstance: {fileID: 7347410993263400542}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &599387441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 599387442}
+  - component: {fileID: 599387444}
+  - component: {fileID: 599387443}
+  m_Layer: 5
+  m_Name: Screamer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &599387442
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599387441}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 136163453}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.50439453, y: 0.0028686523}
+  m_SizeDelta: {x: -1, y: -0.19995117}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &599387443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599387441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 4965687282223935049, guid: 06decdd0ba28a6e4082fa999c0955271, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &599387444
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599387441}
+  m_CullTransparentMesh: 1
 --- !u!1 &603370943
 GameObject:
   m_ObjectHideFlags: 0
@@ -4268,6 +4344,7 @@ GameObject:
   - component: {fileID: 1913415920}
   - component: {fileID: 1913415918}
   - component: {fileID: 1913415921}
+  - component: {fileID: 1913415922}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Block
@@ -4379,6 +4456,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1913415922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913415917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41ca8229f15722a41bd40124d1ea9637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaryImage: {fileID: 599387441}
 --- !u!1 &1927000198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4919000412071822131, guid: d3b98b388685e324a8746149198cb675, type: 3}
