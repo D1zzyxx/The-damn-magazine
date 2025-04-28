@@ -17,9 +17,9 @@ public class ManagerScene : MonoBehaviour
         {
             // Сохраняем позицию игрока в GameManager
             GameSaver.Instance.playerData.position = spawnPosition;
-            GameSaver.Instance.SaveInventory();           
-            Debug.Log("Загружаем сцену");
-            // Загружаем сцену
+                     
+            Debug.Log("Загружаем сцену");            
+            
             SceneManager.LoadScene(targetSceneName);
         }
     }

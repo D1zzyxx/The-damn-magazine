@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private float movingSpeed = 5f;
     private PlayerInputActions playerInputActions; //Переменная, которая подключает скрипт движения персонажа
+    public bool canMove = true;
 
     private Rigidbody2D rb; //Создаю переменную для компонента Rigidbody, которая позволяет управлять персонажем
     private Vector2 movement;
@@ -56,5 +57,6 @@ public class Player : MonoBehaviour
         rb.MovePosition(rb.position + inputVector * (movingSpeed * Time.fixedDeltaTime)); 
         //Метод, который принимает позицию персонажа, и двигает объект в зависимости от его
         //(текущего местоположения + направление движения * (заданную нами скорость * настраиваемый интервал смены частоты кадров))
+
     }
 }

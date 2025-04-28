@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bffe921814abcb54c8ea5484ff3ac341, type: 3}
   m_Name: MagazineItem
   m_EditorClassIdentifier: 
+  ID: 3
   Name: "\u0416\u0443\u0440\u043D\u0430\u043B"
   Discriptin: "\u0416\u0443\u0440\u043D\u0430\u043B \u0433\u0440\u0443\u043F\u043F\u044B,
     \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u043E\u0442\u043D\u0435\u0441\u0442\u0438

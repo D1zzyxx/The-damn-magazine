@@ -3012,7 +3012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Inv: {fileID: 982658221}
-  SlotsParent: {fileID: 919729063}
+  SlorsParent: {fileID: 919729063}
   inventorySlots:
   - {fileID: 0}
   - {fileID: 0}
@@ -6707,4 +6707,3 @@ SceneRoots:
   - {fileID: 306091994}
   - {fileID: 1015018605}
   - {fileID: 424266220}
-  - {fileID: 8053026000806978540}
