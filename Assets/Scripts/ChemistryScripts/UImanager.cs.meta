@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Scripts/Inventory/Inventory.cs.meta
-guid: 570b478fbaedf4648a18921ed2628f1a
-========
-guid: 720119eab04e5cb45a7b590dbb69a9bb
->>>>>>>> branchArina:Assets/Scripts/CameraControl.cs.meta
+guid: f164067bbcf838c4e8c843f4d832fd1b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

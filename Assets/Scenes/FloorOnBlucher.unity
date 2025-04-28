@@ -340,7 +340,6 @@ GameObject:
   - component: {fileID: 89501342}
   - component: {fileID: 89501341}
   - component: {fileID: 89501343}
-  - component: {fileID: 89501344}
   m_Layer: 5
   m_Name: InventoryBackground
   m_TagString: Untagged
@@ -419,28 +418,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SlorsParent: {fileID: 2084112807}
-  inventorySlots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  slots: []
---- !u!114 &89501344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89501339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58dbffb2bc1fd484d8925619835e1757, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _inventory: {fileID: 89501343}
-  _fileName: SaveDataInventory.JSON
-  slots: []
 --- !u!1 &298585236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,7 +1618,6 @@ GameObject:
   - component: {fileID: 1306167262}
   - component: {fileID: 1306167261}
   - component: {fileID: 1306167264}
-  - component: {fileID: 1306167265}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1768,23 +1744,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!114 &1306167265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306167260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 720119eab04e5cb45a7b590dbb69a9bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  smoothSpeed: 0.12
-  minX: 0
-  minY: 0
-  maxX: 0
-  maxY: 0
 --- !u!1 &1427512954
 GameObject:
   m_ObjectHideFlags: 0
