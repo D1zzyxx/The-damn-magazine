@@ -94,10 +94,7 @@ public class DialogueManager : MonoBehaviour
         isOrder = true; // Первым говорит преподаватель
         panelDialog.SetActive(true); // Включаем панель диалога
         ActivateDialogue(); // Показываем первую строку диалога
-
-       // Player playerMove = player.GetComponent<Player>(); // Получаем скрипт для дальнейших манипуляций
         playerMove.enabled = false; //Отключаем ходьбу
-
     }
 
     // Метод для запуска второго диалога

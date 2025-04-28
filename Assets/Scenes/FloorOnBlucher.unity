@@ -418,7 +418,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 570b478fbaedf4648a18921ed2628f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SlorsParent: {fileID: 2084112807}
+  Inv: {fileID: 89501339}
+  SlotsParent: {fileID: 2084112807}
   inventorySlots:
   - {fileID: 0}
   - {fileID: 0}
@@ -439,8 +440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inventory: {fileID: 89501343}
-  _fileName: SaveDataInventory.JSON
-  slots: []
+  _fileName: SaveInventory
 --- !u!1 &298585236
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,7 +864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.77880096, y: 0.00012397766}
+  m_AnchoredPosition: {x: -0.7788086, y: 0.00012207031}
   m_SizeDelta: {x: -4.3901978, y: 0.76399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &732554711
@@ -1951,7 +1951,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.058550723, y: 0.69012994}
   m_AnchorMax: {x: 0.29139492, y: 0.95600003}
-  m_AnchoredPosition: {x: -0.5000305, y: 0.35131836}
+  m_AnchoredPosition: {x: -0.5, y: 0.35131836}
   m_SizeDelta: {x: -1.0000305, y: -0.7026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455602938
@@ -2684,7 +2684,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.9812084, y: 1}
-  m_AnchoredPosition: {x: 1.5887, y: 0.103969574}
+  m_AnchoredPosition: {x: 1.5886993, y: 0.10397339}
   m_SizeDelta: {x: 2.8228, y: 0.764}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2084484895

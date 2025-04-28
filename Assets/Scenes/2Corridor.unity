@@ -611,6 +611,7 @@ GameObject:
   - component: {fileID: 157373534}
   - component: {fileID: 157373533}
   - component: {fileID: 157373532}
+  - component: {fileID: 157373535}
   m_Layer: 5
   m_Name: InventoryBackground
   m_TagString: Untagged
@@ -650,13 +651,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 570b478fbaedf4648a18921ed2628f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SlorsParent: {fileID: 791381755}
+  Inv: {fileID: 157373530}
+  SlotsParent: {fileID: 791381755}
   inventorySlots:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  slots: []
 --- !u!114 &157373533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,6 +698,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157373530}
   m_CullTransparentMesh: 1
+--- !u!114 &157373535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157373530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58dbffb2bc1fd484d8925619835e1757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inventory: {fileID: 157373532}
+  _fileName: SaveJson.JSON
 --- !u!1 &207461690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,12 +1052,16 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 6f148f215f527e3478308e608a0bb58d, type: 3}
 --- !u!1 &269100586
 GameObject:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
-  - component: {fileID: 269100589}
+  m_Component:
+  - component: {fileID: 269100587}
+  - component: {fileID: 269100590}
   - component: {fileID: 269100588}
+  - component: {fileID: 269100589}
   m_Layer: 5
   m_Name: ButtonDrop
   m_TagString: Untagged

@@ -45,7 +45,7 @@ public class PhysicsDialogue : MonoBehaviour
         isOrder = true; // Первым говорит преподаватель
         isSecondDialogue = false; // Начинаем с первого диалога
 
-        Player playerMove = player.GetComponent<Player>(); // Получаем скрипт для дальнейших манипуляций
+        playerMove = player.GetComponent<Player>(); // Получаем скрипт для дальнейших манипуляций
     }
 
     // Запускается при соприкосновении с коллайдером

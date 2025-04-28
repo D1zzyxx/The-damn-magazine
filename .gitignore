@@ -70,3 +70,12 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Scripts/SaveJSON.cs
+Assets/Scripts/Inventory/Inventory.cs
+Assets/Scripts/Inventory/Inventory.cs
+Assets/Scripts/Inventory/Inventory.cs
+Assets/Scripts/Inventory/Inventory.cs
+Assets/Scripts/Managers/SaveJSON.cs
+Assets/Scripts/SaveJSON.cs
+Assets/Scripts/SaveJSON.cs
+Assets/Scripts/ManagmentGame/GameSaver.cs
