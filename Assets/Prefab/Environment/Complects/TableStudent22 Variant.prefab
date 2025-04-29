@@ -344,6 +344,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 978634767094925260, guid: c00a4cf8bf7ff2748afdb72c8c1599ff, type: 3}
+      propertyPath: m_Size.x
+      value: 0.4685912
+      objectReference: {fileID: 0}
+    - target: {fileID: 978634767094925260, guid: c00a4cf8bf7ff2748afdb72c8c1599ff, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7198609
+      objectReference: {fileID: 0}
+    - target: {fileID: 978634767094925260, guid: c00a4cf8bf7ff2748afdb72c8c1599ff, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0017829537
+      objectReference: {fileID: 0}
+    - target: {fileID: 978634767094925260, guid: c00a4cf8bf7ff2748afdb72c8c1599ff, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.00022262335
+      objectReference: {fileID: 0}
     - target: {fileID: 2144234721428854978, guid: c00a4cf8bf7ff2748afdb72c8c1599ff, type: 3}
       propertyPath: m_Name
       value: TableStudent22 Variant

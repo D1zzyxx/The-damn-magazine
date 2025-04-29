@@ -29,10 +29,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7176052684701673495}
   - {fileID: 7303459873472022464}
   - {fileID: 7822539949347899080}
   - {fileID: 6194865997250534614}
+  - {fileID: 8378924961433347140}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &382565967050200411
@@ -46,6 +46,14 @@ PrefabInstance:
     - target: {fileID: 4253549345337079362, guid: c6748bbaa5c3b9a4fa9aa1d361c83a38, type: 3}
       propertyPath: m_Name
       value: TableStudent2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360381183703557407, guid: c6748bbaa5c3b9a4fa9aa1d361c83a38, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7225383
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360381183703557407, guid: c6748bbaa5c3b9a4fa9aa1d361c83a38, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0019340813
       objectReference: {fileID: 0}
     - target: {fileID: 7411043022714961228, guid: c6748bbaa5c3b9a4fa9aa1d361c83a38, type: 3}
       propertyPath: m_LocalScale.y
@@ -96,9 +104,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6748bbaa5c3b9a4fa9aa1d361c83a38, type: 3}
---- !u!4 &7176052684701673495 stripped
+--- !u!4 &8378924961433347140 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7411043022714961228, guid: c6748bbaa5c3b9a4fa9aa1d361c83a38, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8144986853864190239, guid: c6748bbaa5c3b9a4fa9aa1d361c83a38, type: 3}
   m_PrefabInstance: {fileID: 382565967050200411}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1399858211471221893

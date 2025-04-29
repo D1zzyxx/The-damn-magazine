@@ -110,6 +110,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TableStudent2
       objectReference: {fileID: 0}
+    - target: {fileID: 4360381183703557407, guid: c6748bbaa5c3b9a4fa9aa1d361c83a38, type: 3}
+      propertyPath: m_Size.y
+      value: 0.71840113
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360381183703557407, guid: c6748bbaa5c3b9a4fa9aa1d361c83a38, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.00013449788
+      objectReference: {fileID: 0}
     - target: {fileID: 7411043022714961228, guid: c6748bbaa5c3b9a4fa9aa1d361c83a38, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.79

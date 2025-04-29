@@ -182,6 +182,14 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7126328734962536024, guid: d4b6e7618f9eb3d4d819ad57f7e9fc04, type: 3}
+      propertyPath: m_Size.x
+      value: 0.06980666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126328734962536024, guid: d4b6e7618f9eb3d4d819ad57f7e9fc04, type: 3}
+      propertyPath: m_Center.x
+      value: 0.0850875
+      objectReference: {fileID: 0}
     - target: {fileID: 9215056443509105229, guid: d4b6e7618f9eb3d4d819ad57f7e9fc04, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.36
