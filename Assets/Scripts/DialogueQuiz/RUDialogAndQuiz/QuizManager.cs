@@ -108,7 +108,7 @@ public class QuizManager : MonoBehaviour
          * Чтобы мы не могли много раз проходить викторину
          * И она не воспроизводилась при контакте
          */
-        if (!isQuizPassed)
+        if (!isQuizPassed && !!Player.Instance.pickUpBook)
         {
             currentQuestIndex = 0; // Начинаем с первого вопроса
             correctAnswersCount = 0; // Обнуляем счетчик правильных ответов

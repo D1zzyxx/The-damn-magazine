@@ -1,19 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameSaver : MonoBehaviour
 {
-    public static GameSaver Instance;
+    public static GameSaver instanse;
 
     public PlayerData playerData;
-    public SaveData saveData = new SaveData();
+   
 
     void Awake()
     {
-        if (Instance == null)
+        if (instanse == null)
         {
-            Instance = this;
+            instanse = this;
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -21,31 +22,34 @@ public class GameSaver : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void SaveInventory()
+    private void Start()
     {
-        saveData.inventory = Inventory.instance.GetSaveData();
-        Debug.Log("Предмет сохзранен");
+        Player.Instance.pickUpBook = Convert.ToBoolean(PlayerPrefs.GetInt("BookUp"));
+        Player.Instance.pickUpMagazine = Convert.ToBoolean(PlayerPrefs.GetInt("MagazineUp"));
+    }
+    private void Update()
+    {
+        if(Player.Instance.pickUpBook)
+        {
+            PlayerPrefs.SetInt("BookUp", 1);
+            PlayerPrefs.Save();
+        }
+        if(Player.Instance.pickUpMagazine)
+        {
+            PlayerPrefs.SetInt("MagazineUp", 1);
+            PlayerPrefs.Save();
+        }
+
     }
 
-    public void LoadInventory()
-    {
-        Inventory.instance.LoadSaveData(saveData.inventory);
-        Debug.Log("Загрузка инвентаря");
-    }
 }
 
 [System.Serializable]
-    public class PlayerData
-    {
-    public Vector3 position;
-    public int health;
-    //public InventorySlots[] inventory;
-    // Добавьте другие данные персонажа    
-    }
-[System.Serializable]
-public class SaveData
+public class PlayerData
 {
-    public string[] inventory = new string[5];
+    public Vector3 position;
 }
+      
+
 
 

@@ -16,7 +16,7 @@ public class ManagerScene : MonoBehaviour
         if (other.CompareTag("Player") && gameObject.CompareTag("Door"))
         {
             // Сохраняем позицию игрока в GameManager
-            GameSaver.Instance.playerData.position = spawnPosition;
+            GameSaver.instanse.playerData.position = spawnPosition;
                      
             Debug.Log("Загружаем сцену");            
             

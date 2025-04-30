@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bffe921814abcb54c8ea5484ff3ac341, type: 3}
-  m_Name: Bun
+  m_Name: Book
   m_EditorClassIdentifier: 
-  ID: 1
-  Name: "\u0411\u0443\u043B\u043E\u0447\u043A\u0430"
+  ID: 2
+  Name: "\"\u041C\u0430\u0441\u0442\u0435\u0440 \u0438 \u041C\u0430\u0440\u0433\u0430\u0440\u0438\u0442\u0430\""
   Discriptin: 
   DiscriptinLore: 
-  icon: {fileID: 2184277102450767653, guid: 3b32d96d091a68b4489652690a2c5849, type: 3}
-  itemType: 0
+  icon: {fileID: 7212164253051450657, guid: 138558488b11fe346b79278ce9bb58f5, type: 3}
+  itemType: 2
   powerHeal: 0

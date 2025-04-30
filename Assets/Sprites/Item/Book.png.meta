@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 46f3a0f59c82742469e1028c7c31def5
+guid: 138558488b11fe346b79278ce9bb58f5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2371839594531693475
-    second: zinaidle_0
+      213: 7212164253051450657
+    second: "\u043C\u0438\u043C_0"
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zinaidle_0
+      name: "\u043C\u0438\u043C_0"
       rect:
         serializedVersion: 2
-        x: 116
-        y: 6
-        width: 268
-        height: 432
+        x: 31
+        y: 223
+        width: 1698
+        height: 1762
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5c5bbf8478851fd0800000000000000
-      internalID: -2371839594531693475
+      spriteID: 125f6ec2d21c61460800000000000000
+      internalID: 7212164253051450657
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      zinaidle_0: -2371839594531693475
+      "\u043C\u0438\u043C_0": 7212164253051450657
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

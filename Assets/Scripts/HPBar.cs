@@ -9,7 +9,8 @@ using UnityEngine.UI;
 
 public class HPBar : MonoBehaviour
 {
-    private float HP;
+    public static HPBar instanse;
+    public float HP;
     public Image Bar;
     int index;
     static bool chemistyQuest = false;
@@ -20,6 +21,10 @@ public class HPBar : MonoBehaviour
         if (!PlayerPrefs.HasKey("Hearts")) HP = 5f; //Проверяет наличие ключа "Hearts". При его отсутствии, HP будет равен 5
         else PlayerPrefs.GetFloat("Hearts", HP);  // Иначе HP равен данным, которые были сохранены ранее
         PlayerPrefs.Save();
+        if (instanse == null)
+        {
+            instanse = this; //инициализируем статическое поле
+        }
     }
     private void FixedUpdate()
     {
