@@ -41,10 +41,23 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
+        if (movement.y > 0) // Движение вверх
+        {
+            animator.SetFloat("moveY", 1); // Активируем анимацию ходьбы вверх
+        }
+        else if (movement.y < 0) // Движение вниз
+        {
+            animator.SetFloat("moveY", -1); // Отключаем анимацию ходьбы вверх
+        }
+        else // Нет движения по оси Y
+        {
+            animator.SetFloat("moveY", 0); // Возвращаемся к базовой анимации
+        }
         animator.SetFloat("moveX", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
 
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+      
         if (movement.x != 0)
         {
             // Меняем направление спрайта

@@ -563,6 +563,10 @@ PrefabInstance:
       value: DoorExit
       objectReference: {fileID: 0}
     - target: {fileID: 4919000412071822131, guid: d3b98b388685e324a8746149198cb675, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919000412071822131, guid: d3b98b388685e324a8746149198cb675, type: 3}
       propertyPath: m_TagString
       value: Door
       objectReference: {fileID: 0}
@@ -3011,15 +3015,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 570b478fbaedf4648a18921ed2628f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Inv: {fileID: 982658221}
-  SlorsParent: {fileID: 919729063}
-  inventorySlots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  slots: []
 --- !u!114 &982658224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3753,8 +3748,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5ed4646b74bac34ca9d1e674cf0e3da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotItem: {fileID: 0}
-  ItemObj: {fileID: 0}
 --- !u!114 &1166952189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4342,8 +4335,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5ed4646b74bac34ca9d1e674cf0e3da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotItem: {fileID: 0}
-  ItemObj: {fileID: 0}
 --- !u!114 &1471202416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5070,8 +5061,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5ed4646b74bac34ca9d1e674cf0e3da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotItem: {fileID: 0}
-  ItemObj: {fileID: 0}
 --- !u!114 &1631432266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6135,8 +6124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5ed4646b74bac34ca9d1e674cf0e3da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotItem: {fileID: 0}
-  ItemObj: {fileID: 0}
 --- !u!114 &2061430958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6271,8 +6258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5ed4646b74bac34ca9d1e674cf0e3da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotItem: {fileID: 0}
-  ItemObj: {fileID: 0}
 --- !u!114 &2075835980
 MonoBehaviour:
   m_ObjectHideFlags: 0
